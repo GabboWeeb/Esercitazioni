@@ -50,9 +50,6 @@ fot_read=0
 
 
 #acquisizione della cifra
-
-
-
 def leggi_sensori():
     global pot_read,fot_read
     global potenziometro,fotoresistore
@@ -60,9 +57,8 @@ def leggi_sensori():
     fot_read= fotoresistore.read()
     print(f"Il potenziometro legge {pot_read} \t il fotoresistore legge {fot_read}")
 
-
-
 global cifra
+
 def acquisisci_cifra():
     global pot_read,cifra
     risultato = math.floor(( pot_read * 10) / 4096)
@@ -74,7 +70,7 @@ def controllo_cifra():
     lettura_corrente=potenziometro.read()
     
     if pot_read-30<=lettura_corrente<=pot_read+30:    
-        return  False
+        return False
     else:
         return True
     
