@@ -2,7 +2,7 @@ from LDR import LDR
 from DimmableLed import DimmableLed
 from Potentiometer import Potentiometer
 from Servomotor import Servomotor
-from Stepmotor import StepMotor
+from StepMotor import StepMotor
 from Button import Button
 from Buzzer import Buzzer
 from Led import Led
